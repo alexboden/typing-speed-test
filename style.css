@@ -1,0 +1,53 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	background-color: aliceblue;
+	color: black;
+	text-align: center;
+}
+
+.highlight {
+	/* background-color: yellow; */
+	font-weight: bold;
+}
+
+.error {
+	background-color: rgba(209, 78, 78, 0.349);
+	color: black;
+	border: red;
+	border: none;
+	border-bottom: 4px solid rgb(0, 0, 0);
+	outline: none;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 20pt;
+}
+
+#title {
+	text-align: center;
+	font-size: 50pt;
+}
+
+#quote {
+	font-size: 25pt;
+}
+
+#message {
+	font-size: 25pt;
+}
+
+#start {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	background-color: aliceblue;
+}
+
+.typed-value {
+	border: none;
+	border-bottom: 4px solid rgb(0, 0, 0);
+	outline: none;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 20pt;
+	background: aliceblue;
+}
