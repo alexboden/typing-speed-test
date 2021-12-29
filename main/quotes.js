@@ -89,7 +89,6 @@ export const quotes = [
 	'I feel it is everybodies obligation to reach for the best in themselves and use that for the interest of mankind. -- Corneluis (comment on \'Are you going to change the world? (Really?)\')',
 	'In general, we can think of data as defined by some collection of selectors and constructors, together with specified conditions that these procedures must fulfill in order to be a valid representation. -- SICP, What is meant by data?',
 	'Resume writing is just like dating, or applying for a bank loan, in that nobody wants you if you\'re desperate. -- Steve Yegge.',
-	'It(mastering)’s knowing what you are doing. -- Joesgoals.com',
 	'If I tell you I\'m good, you would probably think I\'m boasting. If I tell you I\'m no good, you know I\'m lying. -- Bruce Lee',
 	'If something isn’t working, you need to look back and figure out what got you excited in the first place. -- David Gorman (ImThere.com)',
 	'Pay attention to opportunity cost at all times. Doing one thing means not doing other things. This is a form of risk that is very easy to ignore, to your detriment. -- Marc Andreessen (http://blog.pmarca.com/)',
