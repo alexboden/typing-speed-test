@@ -10,7 +10,11 @@ const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message');
 const typedValueElement = document.getElementById('typed-value');
 const startButton = document.getElementById('start');
+const highScore = document.getElementById('high-score');
 
+//set highscore
+localStorage.setItem('high-score', 0)
+highScore.innerText = 0
 // at the end of script.js
 document.getElementById('start').addEventListener('click', () => {
   // get a quote
@@ -54,13 +58,19 @@ typedValueElement.addEventListener('input', () => {
     // end of sentence
     // Display success
     const elapsedTime = new Date().getTime() - startTime;
-    const message = ` ${(quoteElement.childNodes.length * (1000 / elapsedTime * 60)).toFixed(2)} WPM`;
+	const wpm = (quoteElement.childNodes.length * (1000 / elapsedTime * 60)).toFixed(2);
+    const message = `Previous Score: ${wpm} WPM`;
     messageElement.innerText = message;
 	typedValueElement.value = '';
 	// reset the class name for all elements in quote
     for (const wordElement of quoteElement.childNodes) {
       wordElement.className = '';
     }
+	
+	if (localStorage.getItem('high-score') < wpm){
+		localStorage.setItem('high-score', wpm)
+		highScore.innerText = wpm
+	}
   } else if (typedValue.endsWith(' ') && typedValue === currentWord + ' ') {
     // end of word
     // clear the typedValueElement for the new word
