@@ -69,3 +69,14 @@ p1 {
 .square_btn:hover {
 	background: #5cb3ff;
 }
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: #5cb3ff;
+	text-align: center;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
