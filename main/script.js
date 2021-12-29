@@ -13,8 +13,12 @@ const startButton = document.getElementById('start');
 const highScore = document.getElementById('high-score');
 
 //set highscore
-localStorage.setItem('high-score', 0)
-highScore.innerText = 0
+try {
+  	highScore.innerText = localStorage.getItem('high-score')
+} catch(e) {
+	localStorage.setItem('high-score', 0)
+	highScore.innerText = 0
+}
 // at the end of script.js
 document.getElementById('start').addEventListener('click', () => {
   // get a quote
@@ -94,3 +98,14 @@ typedValueElement.addEventListener('input', () => {
     typedValueElement.className = 'error';
   }
 });
+
+function lsTest(){
+    var test = 'high-score';
+    try {
+        localStorage.setItem(test, test);
+        localStorage.removeItem(test);
+        return true;
+    } catch(e) {
+        return false;
+    }
+}
