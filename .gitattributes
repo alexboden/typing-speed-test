@@ -1,1 +1,2 @@
 *.js linguist-language=JavaScript
+*.txt linguist-language=JavaScript
